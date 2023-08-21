@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            
+            .row {
+                margin-left:-5px;
+                margin-right:-5px;
+            }
+            
+            .column {
+                float: left;
+                width: 50%;
+                padding: 5px;
+            }
+            
+            /* Clearfix (clear floats) */
+            .row::after {
+                content: "";
+                clear: both;
+                display: table;
+            }
+            
+            table {
+                border-collapse: collapse;
+                border-spacing: 0;
+                width: 90%;
+                border: 1px solid #ddd;
+            }
+            
+            th, td {
+                text-align: left;
+                padding: 16px;
+            }
+            
+            tr:nth-child(even) {
+                background-color: #f2f2f2;
+            }
+            </style>
+    </head>
+    <title>Seleção Trova</title>
+    <body>
+        <img src="https://akamai.sscdn.co/uploadfile/letras/playlists/3/a/b/9/3ab92363f7974d679f4194de9f389b5b.jpg" width="400"/>
+        <h1>Uma trova...</h1>
+        <p>
+            Eu só preciso de hoje<br/>      
+            Pra viver e ser feliz<br/>
+            O passado já me foge<br/>
+            E o futuro nada diz!<br/>
+        </p>
+        <p>
+            Autor: <a href="https://pt.wikipedia.org/wiki/J._Borges" target="_blank">Francisco Borges</a>
+        </p>
+
+        <div class="row">
+            <div class="column">
+                <table>
+                    <tr>
+                        <th>Cerveja</th>
+                        <th>Preço</th>
+                    </tr>
+                    <tr>
+                        <td>Brahma</td>
+                        <td>R$ 5,99</td>
+                    </tr>
+                    <tr>
+                        <td>Heineken</td>
+                        <td>R$ 6,99</td>
+                    </tr>
+                    <tr>
+                        <td>Corona</td>
+                        <td>R$ 7,99</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="column">
+                <table>
+                    <tr>
+                        <th>Sanduiches</th>
+                        <th>Preço</th>
+                    </tr>
+                    <tr>
+                        <td>Torrada Queijo e Presunto</td>
+                        <td>R$ 3,99</td>
+                    </tr>
+                    <tr>
+                        <td>X-Tudo</td>
+                        <td>R$ 9,99</td>
+                    </tr>
+
+                </table>
+            </div>
+        </div>
+    </body>     
+</html>
