@@ -1,0 +1,55 @@
+p.verso{
+    color: blue;
+}
+
+p.mote{
+    color: red;
+}
+
+.link:hover { color: #00FF00; } /* CSS link hover (green) */
+
+.poeta img{
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
+    vertical-align: middle;
+    margin: 0px 10px;
+}
+
+.row {
+    margin-left:-5px;
+    margin-right:-5px;
+}
+
+.column {
+    float: left;
+    width: 20%;
+    padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 90%;
+    border: 1px solid #ddd;
+}
+
+th, td {
+    text-align: left;
+    padding: 16px;
+}
+
+tr:nth-child(even) {
+    background-color: #fcfa85;
+}
+
+tr:nth-child(odd) {
+    background-color: #bbfc85;
+}
