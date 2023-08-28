@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <title>Guinness</title>
+    </head>
+
+    <body>
+        <div id="cerveja"> </div>
+        <div><button id="botaoCarregar">Carregando Cervejas...</button></div>
+    </body>
+
+    <script>
+        let transicao = false
+        function carregarDiv(){
+            let div = document.getElementById("cerveja")
+            transicao = !transicao
+            if (transicao){
+                div.innerHTML = "<h1>Guinness 🍻</h1>"
+                div.style.opacity = "1"
+            }
+            else{
+                div.style.opacity = "0" 
+                setTimeout (() => {div.innerHTML = ""}, 500)
+            }
+        }
+
+        let botao = document.getElementById("botaoCarregar")
+        botao.addEventListener("click", carregarDiv)
+    </script>
+</html>

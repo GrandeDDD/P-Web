@@ -1,0 +1,5 @@
+#cerveja{
+    color: yellow;
+    text-shadow: 0 0 7px #3d0f2a, 0 0 5px #8400ff;
+    transition: opacity 0.3s linear;
+}
