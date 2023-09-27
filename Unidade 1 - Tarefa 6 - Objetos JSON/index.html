@@ -1,44 +1,18 @@
 <!DOCTYPE html>
-
-<html>   
-    <style>
-        body {
-            text-align: center;
-        }
-    </style>
-    <head>
-        <meta charset="UTF-8">      
-    </head>
-
-    <body>
-        <div><button id="botaoCarregar">Carregando cervejas...</button></div>
-        <div id="cervejasDiv"></div>            
-    </body>   
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarefa 6</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
     
-    <script>
-        let cervejas = [
-            {
-                name: "Guiness", 
-                alcohol: "10%"            
-            }, 
-            {
-                name: "Desperados",
-                alcohol: "6%"             
-            }, 
-            {
-                name: "Becks",
-                alcohol: "5%"             
-            }
-        ]
-
-        //cs é um array de cervejas
-        const carregarDiv = cs => {
-            const div = document.getElementById("cervejasDiv")
-            const itensHtml = cs.map( item => `<div>${item['name']} -- ${item['alcohol']}</div>` ) 
-            div.innerHTML = `${itensHtml.join("\n")}`
-        }
-
-        let botao = document.getElementById("botaoCarregar")
-        botao.addEventListener("click", () => carregarDiv(cervejas) )                 
-    </script>
+    <div><button id="botaoCarregar">Carregando cervejas...</button></div>
+    <div id="cervejasDiv"></div>
+    
+    <p>*informações geradas de maneira aleatória e podem não condizer com a realidade</p>
+    
+    <script src="script.js"></script>
+</body>
 </html>
