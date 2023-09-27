@@ -1,4 +1,6 @@
 body {
+    background-image: url("8 (1).png");
+    background-repeat: repeat;
     text-align: center;
 }
 
@@ -37,5 +39,20 @@ button {
     color: #000000; /* Cor do texto */
     border-radius: 5px; /* Cantos arredondados */
     font-weight: bold; /* Texto em negrito */
+}
 
+p {
+    font-size: 23px;
+    color: #f1f168;
+    background-color: #00000075;
+    padding: 2px 10px;
+    width: fit-content;
+    margin: 0;
+}
+
+.central{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    display: inline-block;
 }
