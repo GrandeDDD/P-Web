@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>React #0</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+
+    </div>
+
+    <script src="../libs/react.js"></script>
+    <script src="../libs/react-dom.js"></script>
+
+    <script>
+        ReactDOM.render(
+            React.createElement(
+                'div',
+                null,
+                React.createElement(
+                    'h1',
+                    {id: 'my-heading'},
+                    React.createElement(
+                        'span',
+                        null,
+                        'React ',
+                        React.createElement('em', null, 'é muito'),
+                    ),
+                    ' massa!'
+                ),
+                React.createElement(
+                    'table',
+                    { id: 'tabela'},
+                    React.createElement(
+                        'tr',
+                        null,
+                        React.createElement('th', null, 'Produto'),
+                        React.createElement('th', null, 'Preço')
+                    ),
+                    React.createElement(
+                        'tr',
+                        null,
+                        React.createElement('td', null, 'SSD Crucial 1tb Sata3 2.5'),
+                        React.createElement('td', null, 'R$ 319.98')
+                    )
+                )
+            ),
+            document.getElementById('app')
+        );
+    </script>
+</body>
+</html>
