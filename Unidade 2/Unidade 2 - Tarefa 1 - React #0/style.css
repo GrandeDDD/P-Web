@@ -23,3 +23,13 @@ th, td {
 tr:nth-child(even) {
     background-color: #f1f168;
 }
+
+body {
+    background-image: url("awesome_bg_0.png");
+    background-repeat: repeat;
+    text-align: center;
+}
+
+h1 {
+    color: #eeeeee;
+}
