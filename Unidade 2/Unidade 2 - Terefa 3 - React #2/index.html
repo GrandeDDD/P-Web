@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>React #2</title>
+    </head>
+    
+    <link rel="stylesheet" href="./style.css">
+
+    <body>
+        <div id="app"></div>
+
+        <script src="../libs/react.js"></script>
+        <script src="../libs/react-dom.js"></script>
+        <script src="../libs/babel.js"></script>
+
+        <script type="text/babel">
+        class TabelaBebidas extends React.Component {
+            render() {
+            return (
+                <div>
+                <h2>{this.props.titulo}</h2>
+                <table id="tabela" border="1">
+                    <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Marca</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Havana</td>
+                        <td>Engenho Anísio Santiago</td>
+                    </tr>
+                    </tbody>
+                </table>
+                </div>
+            )
+            }
+        }
+
+        class JogoRetroOnline extends React.Component {
+            render () {
+            return (
+                <div>
+                <h2>{this.props.titulo}</h2>
+                
+                <div>
+                    <a
+                    href="https://vimm.net/vault"
+                    target ="_blank"
+                    >
+                    <img
+                    src="super-mario-bros-super-mario-bros3.gif"
+                    width="30%"
+                    />
+                    </a>
+                </div>
+                </div>
+            )
+            }
+        }
+
+        ReactDOM.render(
+            <div>
+            <TabelaBebidas titulo="Tabela de Bebidas" />
+            <JogoRetroOnline titulo="Gosta de jogos retro? Então clica no Mario!!!"/>
+            </div>,
+            document.getElementById("app"));
+        </script>
+    </body>
+</html>
